@@ -8,7 +8,7 @@ class Figure:
         if not isinstance(other_figure, Figure):
             raise Exception("Метод принимает только обхекты класса figure")
 
-        sum_area = self.perimeter + other_figure.perimeter
+        sum_area = self.area + other_figure.area
         print("Сумма площадей фигур: " + str(sum_area))
 
         # Возвращаю число, чтобы можно было протестить сложение площадей.
