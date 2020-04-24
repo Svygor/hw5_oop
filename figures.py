@@ -39,6 +39,9 @@ class Triangle(Figure):
         if side1 + side2 <= side3 or side1 + side3 <= side2 or side2 + side3 <= side1:
             raise Exception("Сумма двух сторон должна быть меньше третьей стороны")
 
+        self.side1 = side1
+        self.side2 = side2
+        self.side3 = side3
         self.perimeter = side1+side2+side3
         p = self.perimeter/2
         h_side1 = 2*math.sqrt(p*(p-side1)*(p-side2)*(p-side3))/side1
@@ -53,6 +56,8 @@ class Parallelogram(Figure):
                 or h <= 0 or w <= 0):
             raise Exception("стороны должны быть целыми положительнми числами > 0")
 
+        self.h = h
+        self.w = w
         self.name = 'Прямоугольник'
         self.area = h*w
         self.angles = 4
