@@ -9,7 +9,7 @@ class Figure:
 
     def add_square(self, other_figure):
         if not isinstance(other_figure, Figure):
-            raise Exception("Метод принимает только обхекты класса figure")
+            raise Exception("Метод принимает только объекты класса Figure")
 
         sum_area = self.area + other_figure.area
         print("Сумма площадей фигур: " + str(sum_area))
